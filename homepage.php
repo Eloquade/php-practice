@@ -3,8 +3,8 @@
  <title>PHP Assignment</title>
 </head>
 <body>
-<form Name="f1" action="selectCalculator.php" method="post">
-<select name="Calculator">
+<form Name="f1" action="" method="post">
+<select name="calculator">
 <option value="none">Select a Calculator</option>
 <option value="circle">Area and Circumference of a Circle</option>
 <option value="celsius">Convert fahrenheit to Celsius</option>
