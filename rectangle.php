@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>PHP Program To find Area and Perimeter of a Square</title>
+<title>PHP Program To find Area and Perimeter of a rectangle</title>
 </head>
 <body>
 <form method="post">
