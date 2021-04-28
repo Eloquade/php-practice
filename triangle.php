@@ -14,13 +14,17 @@
 <tr>
 <td> <input type="text" name="num3" value="" placeholder="Enter c value"/> </td>
 </tr>
+
 <tr>
 <td> <input type="submit" name="submit" value="Submit"/>
 </td>
 </tr>
+
 </table>
 </form>
 <?php
+$x='submit';
+do{
 if(isset($_POST['submit']))
 {
 $a = $_POST['num1'];
@@ -31,8 +35,14 @@ $s = ($a + $b + $c) / 2;
 $area = sqrt($s * ($s - $a) * ($s - $b) * ($s - $c)); //Formula for area of the triangle
 $precision = 4;
 echo " Area of the trainagle is = ".number_format($area, $precision);
-return 0;
+echo "";
+  $x++;
 }
+} while($x=2);
+    {
+        echo"do you want to try again ";
+
+    }
 ?>
 </body>
 </html>
