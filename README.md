@@ -1,5 +1,5 @@
 # php-practice
-#Groupwork
+# Groupwork
 ## Leader: [Lawrence Perez](https://github.com/Eloquade)
 ### Members that contribute in the code
 
