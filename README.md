@@ -1,5 +1,10 @@
-# php-practice
-# Groupwork
+# [Php Practice Calculator]
+## Feature
+- Area and Circumference of a Circle
+- Convert Fahrenheit to Celsius
+- Area and Perimeter of a Rectangle
+- Area of Triangle
+***
 ## Leader: [Lawrence Perez](https://github.com/Eloquade)
 ### Members that contribute in the code
 
