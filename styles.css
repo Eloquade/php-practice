@@ -43,3 +43,9 @@ figure.tree{
     top: 50px;
     margin-left: 120px;
 }
+figure.four{
+    margin: center;
+    border-radius: 5px 30px 5px;
+    position: bottom;
+    margin-left: 50px;
+}

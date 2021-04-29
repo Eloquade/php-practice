@@ -3,39 +3,12 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="styles.css">
-<strong><h1>Convert Fahrenheit to Celsius</h1></strong>
+
 </head>
 <body>
 <form method="post">
-<br><br>
- Enter Temprature in Fahrenheit : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="far">
-<br><br>
-<input type="submit" name= "submit" value="Convert" style="font-size: 15px; background-color:  #f27669;">
-
-<?php
-if(isset($_POST['submit']))
-{
- $f= $_POST['far'];
- $c= ($f - 32) * (5/9);
- echo "<br>";
- echo "<br>";
- echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style='background-color: #e4ddcb'><center><label class='col-sm-2 control-label' >Temprature in Celcius =</label> <input class='easypositive' value=$c ></span></center>";
-}
- ?>
 </body>
-<footer>
-<section>
-            <figure class="two">
-                <img src="./Images/14.jpg" alt="Fahrenheit to Celsius">
-                <figcaption>Fahrenheit to Celsius</figcaption>
-            </figure>
-            <figure class="two">
-                <img src="./Images/15.jpg" alt="Fahrenheit to Celsius">
-                <figcaption>Fahrenheit to Celsius</figcaption>
-            </figure>
-</section>
-</footer>
-=======
+
    <head>
       <!-- Required meta tags -->
       <meta charset="utf-8">
@@ -44,10 +17,11 @@ if(isset($_POST['submit']))
          #txtFirst {
             display: none;
          }
+
       </style>
 
       <!-- Bootstrap CSS -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
    </head>
    <body>
       <?php
@@ -72,6 +46,19 @@ if(isset($_POST['submit']))
                           Please Enter Temprature in Fahrenheit!
                         </div>
                       </div>
+
+                                 <section>
+                                             <figure class="two">
+                                                <img src="./Images/14.jpg" alt="Fahrenheit to Celsius">
+                                                <figcaption>Fahrenheit to Celsius</figcaption>
+                                             </figure>
+                                             <figure class="two">
+                                                <img src="./Images/15.jpg" alt="Fahrenheit to Celsius">
+                                                <figcaption>Fahrenheit to Celsius</figcaption>
+                                             </figure>
+                                 </section>
+
+
                       <div class="col-md-4">
                          <label for="validationCustom02" class="form-label">Temprature in Celcius</label>
                          <input type="text" class="form-control"  id="txtSecond" required disabled>
@@ -82,31 +69,32 @@ if(isset($_POST['submit']))
                       </div>
 
                     </form>
-                 </div>   
-            </div>  
-            
+
+                 </div>
+            </div>
+
             <?php
-            
+
          } while ($count == 3);
 
          if(isset($_POST['submit'])){
                $f= $_POST['far'];
                $c= ($f - 32) * (5/9);
                $count=$_SESSION['count'];
-         
+
                echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input class='form-control' id='txtFirst' value=$c >";
                if($count == 3){
                    ?>
                        <div class="container h-100">
                             <div class="row h-100 justify-content-center align-items-center">
                                <form class="row g-3 needs-validation" method="POST" novalidate>
-                                <strong><h1>You Enter 2 times</h1></strong>
+                                <strong><h1>Do you want to continue ?</h1></strong>
                                  <div class="col-md-4">
-                                   <button class="btn btn-primary"name="ok" type="submit">Continue</button>
+                                   <button class="btn btn-primary"name="ok"  type="submit">Continue </button>
                                  </div>
                                </form>
-                            </div>   
-                       </div>  
+                            </div>
+                       </div>
                        <script>
                           function myFunction() {
                             var myobj = document.getElementById("demo");
@@ -116,7 +104,7 @@ if(isset($_POST['submit']))
                        </script>
                    <?php
                    if(isset($_POST['ok']))
-                   {    
+                   {
                    header("Refresh:0");
                    }
                }
@@ -125,10 +113,10 @@ if(isset($_POST['submit']))
      <script>
          document.addEventListener('DOMContentLoaded', () =>{
              if (document.getElementById('txtFirst').value != 0 ){
-                document.getElementById('txtSecond').value = document.getElementById('txtFirst').value 
+                document.getElementById('txtSecond').value = document.getElementById('txtFirst').value
              }
          });
-         
+
          (function () {
            'use strict'
            let forms = document.querySelectorAll('.needs-validation')
@@ -139,7 +127,7 @@ if(isset($_POST['submit']))
                    event.preventDefault()
                    event.stopPropagation()
                  }
-              
+
                  form.classList.add('was-validated')
                }, false)
              })
