@@ -17,9 +17,9 @@
 
       <?php
       if(isset($_POST['submit'])){
-       $f= $_POST['far'];
-       $c= ($f - 32) * (5/9);
-       echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style='background-color: #e4ddcb'><center><label class='col-sm-2 control-label' >Temprature in Celcius =</label> <input class='easypositive' value=$c ></span></center>";
+         $f= $_POST['far'];
+         $c= ($f - 32) * (5/9);
+         echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style='background-color: #e4ddcb'><center><label class='col-sm-2 control-label' >Temprature in Celcius =</label> <input class='easypositive' value=$c ></span></center>";
       }
     ?>
    </body>
