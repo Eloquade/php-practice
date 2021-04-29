@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="stylesheet" href="styles.css">
+<t<link rel="stylesheet" href="styles.css">
 <title>PHP Program To determine the area of triangle</title>
 <h1>Program To determine the Area of Triangle</h1>
 </head>
@@ -14,7 +14,28 @@ Enter B value: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 Enter C  value: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="num3" value="">
 <br><br>
 <input type="submit" name= "submit" value="Convert" style="font-size: 15; background-color:  #f27669;">
+<table border="0">
+<tr>
+<td> <input type="text" name="num1" value="" placeholder="Enter a value"/> </td>
+</tr>
+<tr>
+<td> <input type="text" name="num2" value="" placeholder="Enter b value"/> </td>
+</tr>
+<tr>
+<td> <input type="text" name="num3" value="" placeholder="Enter c value"/> </td>
+</tr>
+
+<tr>
+<td> <input type="submit" name="submit" value="Submit"/>
+</td>
+</tr>
+
+</table>
+</form>
+
 <?php
+$x='submit';
+
 if(isset($_POST['submit']))
 {
 $a = $_POST['num1'];
@@ -27,7 +48,11 @@ $precision = 4;
 echo "<br>";
 echo "<br>";
 echo " Area of the trainagle is = ".number_format($area, $precision);
+echo "";
+  $x++;
 }
+
+
 ?>
 </body>
 <footer>
@@ -42,4 +67,3 @@ echo " Area of the trainagle is = ".number_format($area, $precision);
             </figure>
 </section>
 </footer>
-</html>
