@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(140, 180, 233);
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+figure img {
+    margin: auto;
+    border-radius: 5px 30px 5px;
+    position: relative;
+    top: -50px;
+    margin-left: 30px;
+}
+figcaption{
+    position: relative;
+    top: -40px;
+    text-align: center;
+    text-indent: 20px;
+    color: rgb(0, 0, 0);
+}
+footer{
+    position: relative;
+    top: 120px;
+}
+section {
+    display: flex;
+    flex-direction: row;
+}
+h1.homepage{
+    font-size: 50px;
+}
+figure.two{
+    margin: auto;
+    border-radius: 5px 30px 5px;
+    position: relative;
+    top: 20px;
+    margin-left: 120px;
+}
+figure.tree{
+    margin: auto;
+    border-radius: 5px 30px 5px;
+    position: relative;
+    top: 50px;
+    margin-left: 120px;
+}
